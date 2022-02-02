@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="Language">
+    <file alias="Dutch">i18n_Dutch.qm</file>
+    <file alias="English">i18n_English.qm</file>
+    <file alias="Italian">i18n_Italian.qm</file>
+    <file alias="French">i18n_French.qm</file>
+    <file alias="German">i18n_German.qm</file>
+    <file alias="Spanish">i18n_Spanish.qm</file>
+  </qresource>
+</RCC>

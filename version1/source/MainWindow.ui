@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>I18N_MAINWINDOW</string>
+  </property>
+  <widget class="QWidget" name="wid_center">
+   <layout class="QVBoxLayout" name="lay_center">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QGraphicsView" name="wid_graphics">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="wid_factor" native="true">
+      <layout class="QHBoxLayout" name="lay_factor">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="btn_histogram">
+         <property name="text">
+          <string notr="true">H</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_r">
+         <property name="text">
+          <string notr="true">R</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_g">
+         <property name="text">
+          <string notr="true">G</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_b">
+         <property name="text">
+          <string notr="true">B</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_a">
+         <property name="text">
+          <string notr="true">A</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_dot">
+         <property name="text">
+          <string notr="true">.</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_ores">
+         <property name="text">
+          <string>I18N_LAB_ORES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_ores_val">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="spa_h1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_factor">
+         <property name="text">
+          <string>I18N_LAB_FACTOR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="box_factor"/>
+       </item>
+       <item>
+        <spacer name="spa_h2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_nres">
+         <property name="text">
+          <string>I18N_LAB_NRES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_nres_val">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="wid_menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mm_app">
+    <property name="title">
+     <string>I18N_MM_APP</string>
+    </property>
+    <addaction name="me_app_open"/>
+    <addaction name="separator"/>
+    <addaction name="me_app_quit"/>
+   </widget>
+   <widget class="QMenu" name="mm_about">
+    <property name="title">
+     <string>I18N_MM_ABOUT</string>
+    </property>
+    <addaction name="me_about_app"/>
+    <addaction name="me_about_qt"/>
+   </widget>
+   <widget class="QMenu" name="mm_config">
+    <property name="title">
+     <string>I18N_MM_CONFIG</string>
+    </property>
+    <widget class="QMenu" name="sm_config_language">
+     <property name="title">
+      <string>I18N_SM_CONFIG_LANGUAGE</string>
+     </property>
+     <addaction name="me_language_english"/>
+     <addaction name="separator"/>
+     <addaction name="me_language_dutch"/>
+     <addaction name="me_language_french"/>
+     <addaction name="me_language_german"/>
+     <addaction name="me_language_italian"/>
+     <addaction name="me_language_spanish"/>
+    </widget>
+    <widget class="QMenu" name="sm_config_theme">
+     <property name="title">
+      <string>I18N_SM_CONFIG_THEME</string>
+     </property>
+     <addaction name="me_theme_fusion"/>
+     <addaction name="separator"/>
+     <addaction name="me_theme_curve"/>
+     <addaction name="me_theme_mac"/>
+     <addaction name="me_theme_windows"/>
+     <addaction name="separator"/>
+     <addaction name="me_theme_darkmode"/>
+    </widget>
+    <addaction name="sm_config_language"/>
+    <addaction name="sm_config_theme"/>
+   </widget>
+   <addaction name="mm_app"/>
+   <addaction name="mm_config"/>
+   <addaction name="mm_about"/>
+  </widget>
+  <widget class="QStatusBar" name="wid_statusbar"/>
+  <action name="me_app_open">
+   <property name="text">
+    <string>I18N_ME_APP_OPEN</string>
+   </property>
+  </action>
+  <action name="me_app_quit">
+   <property name="text">
+    <string>I18N_ME_APP_QUIT</string>
+   </property>
+  </action>
+  <action name="me_about_app">
+   <property name="text">
+    <string>I18N_ME_ABOUT_APP</string>
+   </property>
+  </action>
+  <action name="me_about_qt">
+   <property name="text">
+    <string>I18N_ME_ABOUT_QT</string>
+   </property>
+  </action>
+  <action name="me_language_english">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_ENGLISH</string>
+   </property>
+  </action>
+  <action name="me_theme_fusion">
+   <property name="text">
+    <string>I18N_ME_THEME_FUSION</string>
+   </property>
+  </action>
+  <action name="me_theme_mac">
+   <property name="text">
+    <string>I18N_ME_THEME_MAC</string>
+   </property>
+  </action>
+  <action name="me_theme_windows">
+   <property name="text">
+    <string>I18N_ME_THEME_WINDOWS</string>
+   </property>
+  </action>
+  <action name="me_theme_curve">
+   <property name="text">
+    <string>I18N_ME_THEME_CURVE</string>
+   </property>
+  </action>
+  <action name="me_language_german">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_GERMAN</string>
+   </property>
+  </action>
+  <action name="me_language_dutch">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_DUTCH</string>
+   </property>
+  </action>
+  <action name="me_language_spanish">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_SPANISH</string>
+   </property>
+  </action>
+  <action name="me_language_italian">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_ITALIAN</string>
+   </property>
+  </action>
+  <action name="me_language_french">
+   <property name="text">
+    <string>I18N_ME_LANGUAGE_FRENCH</string>
+   </property>
+  </action>
+  <action name="me_theme_darkmode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>I18N_ME_THEME_DARKMODE</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
