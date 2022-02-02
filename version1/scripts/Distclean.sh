@@ -8,6 +8,8 @@ find | grep "CMakeFiles" >> $FILES
 find | grep "Makefile" >> $FILES
 find | grep "cmake_install.cmake" >> $FILES
 find | grep "cbp" >> $FILES
+find | grep ".depends" >> $FILES
+find | grep "_parameters" >> $FILES
 
 while read FILE
 do
